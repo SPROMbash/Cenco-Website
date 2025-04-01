@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html LANG="en">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta NAME="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
 
     <!--========================  FAVICON  ===============================-->
     <!--========================  REMIXICONS  ===============================-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
     <!--========================  SWIPER  ===============================-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!--========================  CSS  ===============================-->
     <link rel="stylesheet" href="assets/css/styles.css">
+    
 
     <title>Cenco Website</title>
 </head>
@@ -19,11 +24,11 @@
     <!--========================  HEADER  ===============================-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">ARTÍCULOS PUBLICITARIOS</a>
+            <a href="#" class="nav__logo">MENÚ</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li>
-                        <a href="#inicio" class="nav__link">INICIO</a>
+                        <a href="#inicio" class="nav__link active-link">INICIO</a>
                     </li>
 
                     <li>
@@ -59,7 +64,7 @@
     <!--========================  MAIN  ===============================-->
     <main class="main">
         <!--========================  INICIO  ===============================-->
-        <section class="seccion inicio" id="inicio">
+        <section class="inicio section" id="inicio">
             <div class="home__container container grid">
                 <h1 class="home__title">CENCO</h1>
                 <div class="home__images">
@@ -78,11 +83,10 @@
         </section>
 
         <!--========================  CATÁLOGOS  ===============================-->
-        <section class="seccion catalogos" id="catalogos">
+        <section class="catalogos section" id="catalogos">
             <div class="catalogos__container container">
                 <h2 class="section__title">CATÁLOGOS</h2>
                 <div class="catalogos__swiper">
-                    <div>
                         <article class="catalogos__card">
                             <div class="catalogos__images">
                                 <div class="catalogos__shape"></div>
@@ -106,43 +110,394 @@
                             <div class="catalogos__data">
                                 <h2 class="catalogos__name">CATÁLOGO 2</h2>
                                 <p class="catalogos__description">Catálogo estándar anual</p>
-                                <a href="#catalogo1" class="button button-dark">VER CATÁLOGO</a>
+                                <a href="#catalogo2" class="button button-dark">VER CATÁLOGO</a>
                             </div>
 
                         </article>
-                    </div>
+                        <article class="catalogos__card">
+                            <div class="catalogos__images">
+                                <div class="catalogos__shape"></div>
+                                <img src="assets/img/imagenCatalogo.jpeg" alt="image" class="catalogos">
+                            </div>
+
+                            <div class="catalogos__data">
+                                <h2 class="catalogos__name">CATÁLOGO 3</h2>
+                                <p class="catalogos__description">Catálogo estándar anual</p>
+                                <a href="#catalogo3" class="button button-dark">VER CATÁLOGO</a>
+                            </div>
+
+                        </article>
+                        <article class="catalogos__card">
+                            <div class="catalogos__images">
+                                <div class="catalogos__shape"></div>
+                                <img src="assets/img/imagenCatalogo.jpeg" alt="image" class="catalogos">
+                            </div>
+
+                            <div class="catalogos__data">
+                                <h2 class="catalogos__name">CATÁLOGO 4</h2>
+                                <p class="catalogos__description">Catálogo estándar anual</p>
+                                <a href="#catalogo4" class="button button-dark">VER CATÁLOGO</a>
+                            </div>
+
+                        </article>
+                        <article class="catalogos__card">
+                            <div class="catalogos__images">
+                                <div class="catalogos__shape"></div>
+                                <img src="assets/img/imagenCatalogo.jpeg" alt="image" class="catalogos">
+                            </div>
+
+                            <div class="catalogos__data">
+                                <h2 class="catalogos__name">CATÁLOGO 5</h2>
+                                <p class="catalogos__description">Catálogo estándar anual</p>
+                                <a href="#catalogo5" class="button button-dark">VER CATÁLOGO</a>
+                            </div>
+
+                        </article>
+                        <article class="catalogos__card">
+                            <div class="catalogos__images">
+                                <div class="catalogos__shape"></div>
+                                <img src="assets/img/imagenCatalogo.jpeg" alt="image" class="catalogos">
+                            </div>
+
+                            <div class="catalogos__data">
+                                <h2 class="catalogos__name">CATÁLOGO 6</h2>
+                                <p class="catalogos__description">Catálogo estándar anual</p>
+                                <a href="#catalogo6" class="button button-dark">VER CATÁLOGO</a>
+                            </div>
+
+                        </article>
+                        <article class="catalogos__card">
+                            <div class="catalogos__images">
+                                <div class="catalogos__shape"></div>
+                                <img src="assets/img/imagenCatalogo.jpeg" alt="image" class="catalogos">
+                            </div>
+
+                            <div class="catalogos__data">
+                                <h2 class="catalogos__name">CATÁLOGO 7</h2>
+                                <p class="catalogos__description">Catálogo estándar anual</p>
+                                <a href="#catalogo7" class="button button-dark">VER CATÁLOGO</a>
+                            </div>
+
+                        </article>
+                        <article class="catalogos__card">
+                            <div class="catalogos__images">
+                                <div class="catalogos__shape"></div>
+                                <img src="assets/img/imagenCatalogo.jpeg" alt="image" class="catalogos">
+                            </div>
+
+                            <div class="catalogos__data">
+                                <h2 class="catalogos__name">CATÁLOGO 8</h2>
+                                <p class="catalogos__description">Catálogo estándar anual</p>
+                                <a href="#catalogo8" class="button button-dark">VER CATÁLOGO</a>
+                            </div>
+                        </article>
                 </div>
             </div>
         </section>
 
         <!--========================  ¿QUIÉNES SOMOS?  ===============================-->
-        <section class="seccion quienesSomos" id="quienesSomos">
+        <section class="about section" id="quienesSomos">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title">APRENDE MÁS<br> SOBRE NOSOTROS</h2>
+                    <p class="about__description">
+                        Creemos en la creatividad y la originalidad como pilares fundamentales de la publicidad, por eso desarrollamos estrategias personalizadas que se adaptan a las necesidades de cada negocio. Ya sea con merchandising corporativo, regalos promocionales o productos personalizados, en Cenco transformamos ideas en soluciones efectivas.
+                    </p>
+
+                    <a href="#catalogos" class="button"> Nuestros Catálogos</a>
+                </div>
+
+                <div class="about__images">
+                    <div class="about__shape"></div>
+                    <img src="assets/img/articulos.png" alt="" class="about__articulos">
+                </div>
+            </div>
 
         </section>
 
         <!--========================  MUESTRAS  ===============================-->
-        <section class="seccion muestras" id="muestras">
-
-        </section>
+        <section class="muestras section" id="muestras">
+            <div class="container">
+                <h2 class="section__title">MUESTRAS<h2>
+                <div class="swiper muestras-slider">
+                    <div class="swiper-wrapper">
+                      <!-- Slide-start -->
+                      <div class="swiper-slide muestras-slide">
+                        <div class="muestras-slide-img">
+                          <img src="assets/img/muestra-1.jpeg" alt="Tranding">
+                        </div>
+                        <div class="muestras-slide-content">
+                          <div class="muestras-slide-content-bottom">
+                            <h2 class="food-name">
+                              Calendario
+                            </h2>
+                            <h3 class="food-rating">
+                              <span>4.5</span>
+                              <div class="rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                              </div>
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Slide-end -->
+                      <!-- Slide-start -->
+                      <div class="swiper-slide muestras-slide">
+                        <div class="muestras-slide-img">
+                          <img src="assets/img/muestra-2.jpeg" alt="Tranding" class="muestras-img">
+                        </div>
+                        <div class="muestras-slide-content">
+                          <div class="muestras-slide-content-bottom">
+                            <h2 class="food-name">
+                              Reloj
+                            </h2>
+                            <h3 class="food-rating">
+                              <span>4.5</span>
+                              <div class="rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                              </div>
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Slide-end -->
+                      <!-- Slide-start -->
+                      <div class="swiper-slide muestras-slide">
+                        <div class="muestras-slide-img">
+                          <img src="assets/img/muestra-3.jpeg" alt="Tranding">
+                        </div>
+                        <div class="muestras-slide-content">
+                          <div class="muestras-slide-content-bottom">
+                            <h2 class="food-name">
+                              Pegatinas
+                            </h2>
+                            <h3 class="food-rating">
+                              <span>4.5</span>
+                              <div class="rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                              </div>
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Slide-end -->
+                      <!-- Slide-start -->
+                      <div class="swiper-slide muestras-slide">
+                        <div class="muestras-slide-img">
+                          <img src="assets/img/muestra-4.jpeg" alt="Tranding">
+                        </div>
+                        <div class="muestras-slide-content">
+                          <div class="muestras-slide-content-bottom">
+                            <h2 class="food-name">
+                              Tazas Personalizadas
+                            </h2>
+                            <h3 class="food-rating">
+                              <span>4.5</span>
+                              <div class="rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                              </div>
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Slide-end -->
+                      <!-- Slide-start -->
+                      <div class="swiper-slide muestras-slide">
+                        <div class="muestras-slide-img">
+                          <img src="assets/img/muestra-5.jpeg" alt="Tranding">
+                        </div>
+                        <div class="muestras-slide-content">
+                          <div class="muestras-slide-content-bottom">
+                            <h2 class="food-name">
+                              Toallas
+                            </h2>
+                            <h3 class="food-rating">
+                              <span>4.5</span>
+                              <div class="rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                              </div>
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Slide-end -->
+                      <!-- Slide-start -->
+                      <div class="swiper-slide muestras-slide">
+                        <div class="muestras-slide-img">
+                          <img src="assets/img/muestra-6.jpeg" alt="Tranding">
+                        </div>
+                        <div class="muestras-slide-content">
+                          <div class="muestras-slide-content-bottom">
+                            <h2 class="food-name">
+                              Llaveros
+                            </h2>
+                            <h3 class="food-rating">
+                              <span>4.5</span>
+                              <div class="rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                              </div>
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Slide-end -->
+                      <!-- Slide-start -->
+                      <div class="swiper-slide muestras-slide">
+                        <div class="muestras-slide-img">
+                          <img src="assets/img/muestra-7.jpeg" alt="Tranding">
+                        </div>
+                        <div class="muestras-slide-content">
+                          <div class="muestras-slide-content-bottom">
+                            <h2 class="food-name">
+                              Puzzles
+                            </h2>
+                            <h3 class="food-rating">
+                              <span>4.5</span>
+                              <div class="rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                              </div>
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Slide-end -->
+                    </div>
+          
+                    <div class="muestras-slider-control">
+                      <div class="swiper-button-prev slider-arrow">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                      </div>
+                      <div class="swiper-button-next slider-arrow">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                </div>
+              </section>
 
         <!--========================  CONTACTO  ===============================-->
-        <section class="seccion contacto" id="contacto">
+        <section class="contacto section" id="contacto">
+          <h2 class="section__title">CONTÁCTANOS</h2>
+          <div class="contacto__container container grid">
+            <div class="contacto__info grid">
+              <div>
+                <h3 class="contacto__title">Escríbenos</h3>
 
+                <div class="contacto__social">
+                  <a href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!" target="_blank" class="contacto__social-link">
+                    <i class="ri-whatsapp-fill"></i>
+                  </a>
+
+                  <a href="https://t.me/telegram" target="_blank" class="contacto__social-link">
+                    <i class="ri-telegram-2-fill"></i>
+                    
+                  </a>
+
+                </div>
+              </div>
+
+              <div>
+                <h3 class="contacto__title">Ubicación</h3>
+
+                <address class="contacto__direccion">
+                  Av. Los Pinos 123
+                  San Isidro, Lima
+                </address>
+
+                <a href="https://maps.app.goo.gl/gb8soC3tnczzLfYu5" class="contacto__mapa">
+                  <i class="ri-map-pin-fill"></i>
+                  <span>View On Map</span>
+                </a>
+
+
+              </div>
+            </div>
+
+            <div class="contacto__info grid">
+              <div>
+                <h3 class="contacto__title">Delivery</h3>
+
+                <address class="contacto__direccion">
+                  +00-987-7654-321 <br>
+                  +11-012345
+                </address>
+              </div>
+
+              <div>
+                <h3 class="contacto__title">Horario</h3>
+
+                <address class="contacto__direccion">
+                  Monday - Friday <br>
+                  9:00am - 6:00pm
+                </address>
+              </div>
+            </div>
+
+            <div class="contacto__images">
+              <div class="contacto__shape"></div>
+              <img src="assets/img/contact-delivery.png" alt="image" class="contacto__delivery">
+
+
+            </div>
+          </div>
         </section>
     </main>
 
     <!--========================  FOOTER  ===============================-->
     <footer class="footer">
-
+      <div class="footer__container container grid">
+        <div>
+          <h3 class="footer__title">Suscríbete al NewsLetter</h3>
+          <form action="" class="footer__form">
+            <input type="email" placeholder="Email" class="footer__input">
+            <button type="submit" class="footer__button button">Suscríbete</button>
+          </form>
+        </div>
+      </div>
     </footer>
 
     <!--========================  SCROLL UP  ===============================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
 
     <!--========================  SCROLLREVEAL  ===============================-->
     <script src=""></script>
 
-    <!--========================  SWIPER JS  ===============================-->
-    <script src=""></script>
+     <!--========================  SWIPER JS  ===============================-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.js"></script>
 
     <!--========================  MAIN JS  ===============================-->
     <script src="assets/js/main.js"></script>
