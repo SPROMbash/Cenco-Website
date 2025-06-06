@@ -22,9 +22,9 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1500px) {
   html {
-    zoom: 1.5;
+    zoom: 1.0;
   }
 }
 
@@ -76,31 +76,33 @@ body {
 }
 
 #muestras {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  min-height: 100vh;     
   width: 100%;
   padding: 4rem 0;
 }
 
 .muestras .container {
   width: 100%;
-  max-width: 100%;
-  padding: 0 2rem; /* Agrega un pequeño margen interno */
+  max-width: 1200px;
+  padding: 0 2rem; 
   margin: 0 auto;
 }
 
 @media (max-width:1440px) {
-  #muestras {
-    padding: 7rem 0;
-  }
+  
 }
 
 #muestras .muestras-slider {
-  height: 52rem;
-  padding: 2rem 0;
+  height: 40rem;
   position: relative;
+
 }
 
 #muestras .section__title {
-  margin-bottom: 5rem; 
+  margin-bottom: 10rem; 
   color: var(--white-color);
 }
 
@@ -111,26 +113,30 @@ body {
 }
 
 .muestras-slide {
-  width: 37rem;
-  height: 42rem;
+  width: 30rem;
+  height: 34rem;
   position: relative;
   border-radius: 2rem; 
 }
 
 @media (max-width:500px) {
   .muestras-slide {
-    width: 28rem !important;
-    height: 36rem !important;
+    width: 24rem !important;
+    height: 30rem !important;
   }
   .muestras-slide .muestras-slide-img img {
-    width: 28rem !important;
-    height: 36rem !important;
+    width: 24rem !important;
+    height: 30rem !important;
+  }
+
+  #muestras .muestras-slider {
+    height: 48rem; /* Ajustado acorde a las nuevas medidas */
   }
 }
 
 .muestras-slide .muestras-slide-img img {
-  width: 37rem;
-  height: 42rem;
+  width: 30rem;
+  height: 34rem;
   border: 5px solid rgba(50, 50, 50, 0.5);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   border-radius: 2rem;
@@ -176,10 +182,10 @@ body {
 
 .muestras-slider-control {
   position: relative;
-  bottom: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 5rem;
 }
 
 .muestras-slider-control .swiper-button-next {
@@ -256,7 +262,7 @@ body {
 .muestras-slider-control .swiper-pagination {
   position: relative;
   width: 15rem;
-  bottom: 1rem;
+  bottom: .25rem;
 }
 
 .muestras-slider-control .swiper-pagination .swiper-pagination-bullet {

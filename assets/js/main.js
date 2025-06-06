@@ -85,3 +85,29 @@ window.addEventListener('scroll', scrollActive)
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
+// Detectar el tamaño de la pantalla
+const screenWidth = window.innerWidth;
+
+// ScrollReveal dinámico
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2000,
+  delay: 300,
+  reset: screenWidth <= 1500, // Solo se reinicia en pantallas pequeñas
+  viewOffset: screenWidth > 1500 ? { top: 0, bottom: 200 } : { top: 0, bottom: 0 },
+  viewFactor: screenWidth > 1500 ? 0.6 : 0.2 // Se requiere mayor visibilidad para pantallas grandes
+});
+
+sr.reveal('.footer__container');
+sr.reveal('.home__cartel_cenco');
+sr.reveal('.home__data', { delay: 900, origin: 'left' });
+sr.reveal('.home__title', { delay: 1800, origin: 'bottom' });
+sr.reveal('.about__data', { origin: 'left' });
+sr.reveal('.about__images', { origin: 'right' });
+sr.reveal('.about__articulos', { delay: 1000 });
+sr.reveal('.catalogos__card', { interval: 100, origin: 'bottom' });
+sr.reveal('.contacto__info', { interval: 100 });
+sr.reveal('.contacto__shape', { delay: 600, scale: 0 });
+sr.reveal('.contacto__delivery', { delay: 1200 });
