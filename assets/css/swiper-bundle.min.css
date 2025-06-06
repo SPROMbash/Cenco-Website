@@ -22,11 +22,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (min-width: 1550px) {
-  html {
-    zoom: 1.0;
-  }
-}
+
 
 @media (min-width: 2560px) {
   html {
