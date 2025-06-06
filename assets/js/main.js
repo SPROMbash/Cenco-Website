@@ -95,9 +95,9 @@ const sr = ScrollReveal({
   distance: '60px',
   duration: 2000,
   delay: 300,
-  reset: screenWidth <= 1500, // Solo se reinicia en pantallas pequeñas
-  viewOffset: screenWidth > 1500 ? { top: 0, bottom: 200 } : { top: 0, bottom: 0 },
-  viewFactor: screenWidth > 1500 ? 0.6 : 0.2 // Se requiere mayor visibilidad para pantallas grandes
+  reset: screenWidth <= 1550, // Solo se reinicia en pantallas pequeñas
+  viewOffset: screenWidth > 1550? { top: 0, bottom: 200 } : { top: 0, bottom: 0 },
+  viewFactor: screenWidth > 1550 ? 0.6 : 0.2 // Se requiere mayor visibilidad para pantallas grandes
 });
 
 sr.reveal('.footer__container');

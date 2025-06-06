@@ -788,7 +788,7 @@ img.catalogos:hover {
   }
 
   .contacto .section__title{
-    font-size: var(--biggest-font-size);
+    font-size: 8rem;
   }
 
   .contacto__container{
