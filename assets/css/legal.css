@@ -1,0 +1,42 @@
+/* Estilos de las páginas legales (aviso legal, privacidad) */
+.legal__header {
+  background: var(--purple-bg-dark);
+  padding-block: 1rem;
+}
+
+.legal__main {
+  max-width: 50rem;
+  padding-block: 3rem 4rem;
+}
+
+.legal__main h1 {
+  font-size: var(--big-font-size);
+  margin-bottom: 2rem;
+}
+
+.legal__main h2 {
+  font-size: var(--h1-font-size);
+  margin: 2rem 0 .75rem;
+}
+
+.legal__main p,
+.legal__main li { margin-bottom: .75rem; }
+
+.legal__main ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+
+.legal__main mark {
+  background: hsl(50, 100%, 70%);
+  padding: 0 .25rem;
+  border-radius: .2rem;
+}
+
+.legal__updated {
+  margin-top: 2rem;
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.legal__back { margin-top: 2.5rem; }

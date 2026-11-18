@@ -1,575 +1,436 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cenco · Publicidad y regalos promocionales en Tenerife</title>
+  <meta name="description" content="Cenco promociona tu marca con merchandising corporativo, regalos promocionales y productos personalizados. La Laguna, Tenerife.">
+  <meta name="theme-color" content="#5b3a8c">
 
-    <!--========================  FAVICON  ===============================-->
-    <!--========================  REMIXICONS  ===============================-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
-    <!--========================  SWIPER  ===============================-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    <!--========================  CSS  ===============================-->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    
+  <!-- Open Graph (vista previa al compartir en redes) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cenco · Me ves, luego existo">
+  <meta property="og:description" content="Merchandising corporativo, regalos promocionales y productos personalizados en Tenerife.">
+  <meta property="og:image" content="https://sprombash.github.io/Cenco-Website/assets/img/og-image.jpg">
+  <meta property="og:url" content="https://sprombash.github.io/Cenco-Website/">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary_large_image">
 
-    <title>Cenco Website</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <!-- Fuentes e iconos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Saira:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+  <link rel="preload" as="image" href="assets/img/hero-1920.webp" media="(min-width: 768px)">
+  <link rel="preload" as="image" href="assets/img/hero-960.webp" media="(max-width: 767px)">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Datos estructurados para buscadores (negocio local) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Cenco",
+    "description": "Merchandising corporativo, regalos promocionales y productos personalizados.",
+    "image": "https://sprombash.github.io/Cenco-Website/assets/img/og-image.jpg",
+    "url": "https://sprombash.github.io/Cenco-Website/",
+    "telephone": ["+34922266122", "+34922315926"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Camino las Gavias, C/ Pedro González, 14",
+      "postalCode": "38206",
+      "addressLocality": "San Cristóbal de La Laguna",
+      "addressRegion": "Santa Cruz de Tenerife",
+      "addressCountry": "ES"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    }]
+  }
+  </script>
 </head>
 
 <body>
-    <!--========================  HEADER  ===============================-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">MENÚ</a>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li>
-                        <a href="#inicio" class="nav__link active-link">INICIO</a>
-                    </li>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-                    <li>
-                        <a href="#catalogos" class="nav__link">CATÁLOGOS</a>
-                    </li>
+  <!--========================  HEADER  ========================-->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Principal">
+      <a href="#inicio" class="nav__logo" aria-label="Cenco, ir al inicio">
+        <img src="assets/img/logo.webp" alt="Cenco" width="116" height="46">
+      </a>
 
-                    <li>
-                        <a href="#quienesSomos" class="nav__link">¿QUIÉNES SOMOS?</a>
-                    </li>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link active-link">Inicio</a></li>
+          <li><a href="#catalogos" class="nav__link">Catálogos</a></li>
+          <li><a href="#quienes-somos" class="nav__link">Quiénes somos</a></li>
+          <li><a href="#muestras" class="nav__link">Muestras</a></li>
+          <li><a href="#contacto" class="nav__link">Contacto</a></li>
+          <li><a href="#presupuesto" class="button button--small nav__cta">Pide presupuesto</a></li>
+        </ul>
+      </div>
 
-                    <li>
-                        <a href="#muestras" class="nav__link">MUESTRAS</a>
-                    </li>
+      <button class="nav__toggle" id="nav-toggle" type="button" aria-controls="nav-menu" aria-expanded="false" aria-label="Abrir menú">
+        <i class="ri-menu-3-line" aria-hidden="true"></i>
+      </button>
+    </nav>
+  </header>
 
-                    <li>
-                        <a href="#contacto" class="nav__link">CONTACTO</a>
-                    </li>
-                </ul>
-
-                <!-- Boton Cerrar-->
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-large-line"></i>
-                </div>
-            </div>
-
-            <!-- Boton Toggle-->
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-apps-2-fill"></i>
-        </nav>
-    </header>
-
-
-    <!--========================  MAIN  ===============================-->
-    <main class="main">
-        <!--========================  INICIO  ===============================-->
-        <section class="inicio section" id="inicio">
-            <div class="home__container container grid">
-                <h1 class="home__title">CENCO</h1>
-                <div class="home__images">
-                    <div class="home__shape">
-                        <img src="assets/img/imagen_cartel_cenco.png" alt="image" class="home__cartel_cenco">
-                    </div>
-                </div>
-                <div class="home__data">
-                    <p class="home__description">
-                        Somos una empresa que tiene como finalidad promocionar la marca de nuestros clientes con formas
-                        nuevas e ingeniosas.
-                    </p>
-                    <a href="#quienesSomos" class="button">Sobre Nosotros</a>
-                </div>
-            </div>
-        </section>
-
-        <!--========================  CATÁLOGOS  ===============================-->
-        <section class="catalogos section" id="catalogos">
-            <div class="catalogos__container container">
-                <h2 class="section__title">CATÁLOGOS</h2>
-                <div class="catalogos__swiper">
-                        <article class="catalogos__card">
-                            <div class="catalogos__images">
-                                <div class="catalogos__shape"></div>
-                                <img src="assets/img/imagenCatalogo.jpeg" alt="image" class="catalogos">
-                            </div>
-
-                            <div class="catalogos__data">
-                                <h2 class="catalogos__name">CATÁLOGO 1</h2>
-                                <p class="catalogos__description">Productos Personalizados</p>
-                                <a href="https://view.publitas.com/md-es/24-1-yourchoice_es_vr/page/1" class="button button-dark">VER CATÁLOGO</a>
-                            </div>
-
-                        </article>
-
-                        <article class="catalogos__card">
-                            <div class="catalogos__images">
-                                <div class="catalogos__shape"></div>
-                                <img src="assets/img/imagenCatalogo.jpeg" alt="image" class="catalogos">
-                            </div>
-
-                            <div class="catalogos__data">
-                                <h2 class="catalogos__name">CATÁLOGO 2</h2>
-                                <p class="catalogos__description">Catálogo estándar anual</p>
-                                <a href="https://view.publitas.com/md-es/gifts_spa_eur/page/1" class="button button-dark">VER CATÁLOGO</a>
-                            </div>
-
-                        </article>
-
-                        <article class="catalogos__card">
-                            <div class="catalogos__images">
-                                <div class="catalogos__shape"></div>
-                                <img src="assets/img/imagenCatalogo.jpeg" alt="image" class="catalogos">
-                            </div>
-
-                            <div class="catalogos__data">
-                                <h2 class="catalogos__name">CATÁLOGO 3</h2>
-                                <p class="catalogos__description">  El catálogo más grande del mundo</p>
-                                <a href="https://generalcatalogue2025.eu/9232bf5c5f2307bafca344bd05b274fe/" class="button button-dark">VER CATÁLOGO</a>
-                            </div>
-
-                        </article>
-
-                        <article class="catalogos__card">
-                            <div class="catalogos__images">
-                                <div class="catalogos__shape"></div>
-                                <img src="assets/img/imagenCatalogo.jpeg" alt="image" class="catalogos">
-                            </div>
-
-                            <div class="catalogos__data">
-                                <h2 class="catalogos__name">CATÁLOGO 4</h2>
-                                <p class="catalogos__description"> Roly <br>
-                                  Catálogo Textil</p>
-                                <a href="https://www.roly.es/icatalog/urlCatRoly?lang=es" class="button button-dark">VER CATÁLOGO</a>
-                            </div>
-
-                        </article>
-
-                        <article class="catalogos__card">
-                            <div class="catalogos__images">
-                                <div class="catalogos__shape"></div>
-                                <img src="assets/img/imagenCatalogo.jpeg" alt="image" class="catalogos">
-                            </div>
-
-                            <div class="catalogos__data">
-                                <h2 class="catalogos__name">CATÁLOGO 5</h2>
-                                <p class="catalogos__description">Caramelos y Chocolates Publicitarios</p>
-                                <a href="https://www.caramelos-publicitarios.com/index.php" class="button button-dark">VER CATÁLOGO</a>
-                            </div>
-
-                        </article>
-
-                        <article class="catalogos__card">
-                            <div class="catalogos__images">
-                                <div class="catalogos__shape"></div>
-                                <img src="assets/img/imagenCatalogo.jpeg" alt="image" class="catalogos">
-                            </div>
-
-                            <div class="catalogos__data">
-                                <h2 class="catalogos__name">CATÁLOGO 6</h2>
-                                <p class="catalogos__description">Agendas Personalizadas</p>
-                                <a href="https://e.issuu.com/embed.html?d=catalogo_professional_partners_2025_-_baja&hideIssuuLogo=true&u=aimfap&_ga=2.106716294.409578215.1737484625-449514658.1737484625" class="button button-dark">VER CATÁLOGO</a>
-                            </div>
-
-                        </article>
-
-                        <article class="catalogos__card">
-                            <div class="catalogos__images">
-                                <div class="catalogos__shape"></div>
-                                <img src="assets/img/imagenCatalogo.jpeg" alt="image" class="catalogos">
-                            </div>
-
-                            <div class="catalogos__data">
-                                <h2 class="catalogos__name">CATÁLOGO 7</h2>
-                                <p class="catalogos__description">Hi!dea</p>
-                                <a href="https://catalog.hideagifts.com/main/WZYX9WFk/" class="button button-dark">VER CATÁLOGO</a>
-                            </div>
-
-                        </article>
-
-                        <article class="catalogos__card">
-                            <div class="catalogos__images">
-                                <div class="catalogos__shape"></div>
-                                <img src="assets/img/imagenCatalogo.jpeg" alt="image" class="catalogos">
-                            </div>
-
-                            <div class="catalogos__data">
-                                <h2 class="catalogos__name">CATÁLOGO 8</h2>
-                                <p class="catalogos__description">LEDIBE</p>
-                                <a href="https://catalog.on-catalogue.com/view/628448852/" class="button button-dark">VER CATÁLOGO</a>
-                            </div>
-                        </article>
-
-                        <article class="catalogos__card">
-                          <div class="catalogos__images">
-                              <div class="catalogos__shape"></div>
-                              <img src="assets/img/imagenCatalogo.jpeg" alt="image" class="catalogos">
-                          </div>
-
-                          <div class="catalogos__data">
-                              <h2 class="catalogos__name">CATÁLOGO 9</h2>
-                              <p class="catalogos__description">USB</p>
-                              <a href="https://www.articulospublicitarios.net/mailing/mailing/PDF/midocean_-_memorias_usb.pdf" class="button button-dark">VER CATÁLOGO</a>
-                          </div>
-                      </article>
-
-                      <article class="catalogos__card">
-                        <div class="catalogos__images">
-                            <div class="catalogos__shape"></div>
-                            <img src="assets/img/imagenCatalogo.jpeg" alt="image" class="catalogos">
-                        </div>
-
-                        <div class="catalogos__data">
-                            <h2 class="catalogos__name">CATÁLOGO 10</h2>
-                            <p class="catalogos__description">Fabricados en Papel</p>
-                            <a href="https://www.publicatalogue.com/2025/pren/#p=1" class="button button-dark">VER CATÁLOGO</a>
-                        </div>
-                    </article>
-
-                    <article class="catalogos__card">
-                      <div class="catalogos__images">
-                          <div class="catalogos__shape"></div>
-                          <img src="assets/img/imagenCatalogo.jpeg" alt="image" class="catalogos">
-                      </div>
-
-                      <div class="catalogos__data">
-                          <h2 class="catalogos__name">CATÁLOGO 11</h2>
-                          <p class="catalogos__description">Textil fabricado a medida</p>
-                          <a href="https://www.articulospublicitarios.net/mailing/mailing/PDF/pmas_full_sport.pdf" class="button button-dark">VER CATÁLOGO</a>
-                      </div>
-                  </article>
-
-                  <article class="catalogos__card">
-                    <div class="catalogos__images">
-                        <div class="catalogos__shape"></div>
-                        <img src="assets/img/imagenCatalogo.jpeg" alt="image" class="catalogos">
-                    </div>
-
-                    <div class="catalogos__data">
-                        <h2 class="catalogos__name">CATÁLOGO 12</h2>
-                        <p class="catalogos__description">Enjoy</p>
-                        <a href="https://www.flipsnack.com/9FA75F58B7A/inspiration-guide-2025-spanish-non-branded/full-view.html" class="button button-dark">VER CATÁLOGO</a>
-                    </div>
-                </article>
-
-                <article class="catalogos__card">
-                  <div class="catalogos__images">
-                      <div class="catalogos__shape"></div>
-                      <img src="assets/img/imagenCatalogo.jpeg" alt="image" class="catalogos">
-                  </div>
-
-                  <div class="catalogos__data">
-                      <h2 class="catalogos__name">CATÁLOGO 13</h2>
-                      <p class="catalogos__description">Bolsas Personalizadas </p>
-                      <a href="https://www.cataloghi.cloud/HANDLE2023_ES/index.html" class="button button-dark">VER CATÁLOGO</a>
-                  </div>
-              </article>
-                </div>
-            </div>
-        </section>
-
-        <!--========================  ¿QUIÉNES SOMOS?  ===============================-->
-        <section class="about section" id="quienesSomos">
-            <div class="about__container container grid">
-                <div class="about__data">
-                    <h2 class="section__title">APRENDE MÁS<br> SOBRE NOSOTROS</h2>
-                    <p class="about__description">
-                        Creemos en la creatividad y la originalidad como pilares fundamentales de la publicidad, por eso desarrollamos estrategias personalizadas que se adaptan a las necesidades de cada negocio. Ya sea con merchandising corporativo, regalos promocionales o productos personalizados, en Cenco transformamos ideas en soluciones efectivas.
-                    </p>
-
-                    <a href="#catalogos" class="button"> Nuestros Catálogos</a>
-                </div>
-
-                <div class="about__images">
-                    <div class="about__shape"></div>
-                    <img src="assets/img/articulos.png" alt="" class="about__articulos">
-                </div>
-            </div>
-
-        </section>
-
-        <!--========================  MUESTRAS  ===============================-->
-        <section class="muestras section" id="muestras">
-          <div class="container">
-            <h2 class="section__title">MUESTRAS</h2>
-            <div class="swiper muestras-slider">
-              <div class="swiper-wrapper">
-                <!-- Slide-start -->
-                <div class="swiper-slide muestras-slide">
-                  <div class="muestras-slide-img">
-                    <img src="assets/img/muestra-1.jpeg" alt="Calendario">
-                  </div>
-                  <div class="muestras-slide-content">
-                    <div class="muestras-slide-content-bottom">
-                      <h2 class="food-name">Calendario</h2>
-                      <h3 class="food-rating">
-                        <span>4.5</span>
-                        <div class="rating">
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                        </div>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <!-- Slide-end -->
-
-                <!-- Slide-start -->
-                <div class="swiper-slide muestras-slide">
-                  <div class="muestras-slide-img">
-                    <img src="assets/img/muestra-2.jpeg" alt="Tranding" class="muestras-img">
-                  </div>
-                  <div class="muestras-slide-content">
-                    <div class="muestras-slide-content-bottom">
-                      <h2 class="food-name">
-                        Reloj
-                      </h2>
-                      <h3 class="food-rating">
-                        <span>4.5</span>
-                        <div class="rating">
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                        </div>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <!-- Slide-end -->
-
-                <!-- Slide-start -->
-                <div class="swiper-slide muestras-slide">
-                  <div class="muestras-slide-img">
-                    <img src="assets/img/muestra-3.jpeg" alt="Tranding">
-                  </div>
-                  <div class="muestras-slide-content">
-                    <div class="muestras-slide-content-bottom">
-                      <h2 class="food-name">
-                        Pegatinas
-                      </h2>
-                      <h3 class="food-rating">
-                        <span>4.5</span>
-                        <div class="rating">
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                        </div>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <!-- Slide-end -->
-
-                <!-- Slide-start -->
-                <div class="swiper-slide muestras-slide">
-                  <div class="muestras-slide-img">
-                    <img src="assets/img/muestra-4.jpeg" alt="Tranding">
-                  </div>
-                  <div class="muestras-slide-content">
-                    <div class="muestras-slide-content-bottom">
-                      <h2 class="food-name">
-                        Tazas Personalizadas
-                      </h2>
-                      <h3 class="food-rating">
-                        <span>4.5</span>
-                        <div class="rating">
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                        </div>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <!-- Slide-end -->
-
-                <!-- Slide-start -->
-                <div class="swiper-slide muestras-slide">
-                  <div class="muestras-slide-img">
-                    <img src="assets/img/muestra-5.jpeg" alt="Tranding">
-                  </div>
-                  <div class="muestras-slide-content">
-                    <div class="muestras-slide-content-bottom">
-                      <h2 class="food-name">
-                        Toallas
-                      </h2>
-                      <h3 class="food-rating">
-                        <span>4.5</span>
-                        <div class="rating">
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                        </div>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <!-- Slide-end -->
-
-                <!-- Slide-start -->
-                <div class="swiper-slide muestras-slide">
-                  <div class="muestras-slide-img">
-                    <img src="assets/img/muestra-6.jpeg" alt="Tranding">
-                  </div>
-                  <div class="muestras-slide-content">
-                    <div class="muestras-slide-content-bottom">
-                      <h2 class="food-name">
-                        Llaveros
-                      </h2>
-                      <h3 class="food-rating">
-                        <span>4.5</span>
-                        <div class="rating">
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                        </div>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <!-- Slide-end -->
-
-                <!-- Slide-start -->
-                <div class="swiper-slide muestras-slide">
-                  <div class="muestras-slide-img">
-                    <img src="assets/img/muestra-7.jpeg" alt="Tranding">
-                  </div>
-                  <div class="muestras-slide-content">
-                    <div class="muestras-slide-content-bottom">
-                      <h2 class="food-name">
-                        Puzzles
-                      </h2>
-                      <h3 class="food-rating">
-                        <span>4.5</span>
-                        <div class="rating">
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                          <ion-icon name="star"></ion-icon>
-                        </div>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Controles fuera del slider principal -->
-            <div class="muestras-slider-control">
-              <div class="swiper-button-prev slider-arrow">
-                <ion-icon name="arrow-back-outline"></ion-icon>
-              </div>
-              <div class="swiper-button-next slider-arrow">
-                <ion-icon name="arrow-forward-outline"></ion-icon>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </section>
-
-        <!--========================  CONTACTO  ===============================-->
-        <section class="contacto section" id="contacto">
-          <h2 class="section__title">CONTÁCTANOS</h2>
-          <div class="contacto__container container grid">
-            <div class="contacto__info grid">
-              <div>
-                <h3 class="contacto__title">Escríbenos</h3>
-                <div class="contacto__social">
-                  <a href="https://api.whatsapp.com/send?phone=+34 639687333&text= Hola, me gustaría tener más información acerca de vosotros!" target="_blank" class="contacto__social-link">
-                    <i class="ri-whatsapp-fill"></i>
-                  </a>
-                  <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBxnXXrSqcpwWPxvcNMCgWBRfKKBzqMbZdrJTBlxbRQqHhWVscCqZKwMvNxjpfWNhFpMpr" target="_blank" class="contacto__social-link">
-                    <i class="ri-mail-fill"></i>
-                  </a>
-                </div>
-              </div>
-              <div>
-                <h3 class="contacto__title">Ubicación</h3>
-                <address class="contacto__direccion">
-                  Camino las Gavias C/ Pedro González, 14.
-                  <br>
-                  (Frente Colegio Luther King).
-                  <br>
-                  38206 - La Laguna - Tenerife
-                </address>
-                <a href="https://maps.app.goo.gl/gb8soC3tnczzLfYu5" class="contacto__mapa">
-                  <i class="ri-map-pin-fill"></i>
-                  <span>Ver en el mapa</span>
-                </a>
-              </div>
-            </div>
-            <div class="contacto__info grid">
-              <div>
-                <h3 class="contacto__title">Contacto</h3>
-
-                <address class="contacto__direccion">
-                  +34 922 266 122 <br>
-                  +34 922 315 926
-                </address>
-              </div>
-
-              <div>
-                <h3 class="contacto__title">Horario</h3>
-
-                <address class="contacto__direccion">
-                  Lunes - Viernes <br>
-                  8:00am - 5:00pm
-                </address>
-              </div>
-            </div>
-
-            <div class="contacto__images">
-              <div class="contacto__shape"></div>
-              <img src="assets/img/contact-delivery.png" alt="image" class="contacto__delivery">
-
-
-            </div>
-          </div>
-        </section>
-    </main>
-
-    <!--========================  FOOTER  ===============================-->
-    <footer class="footer">
-      <div class="footer__container container grid">
-        <div>
-          <h3 class="footer__title">Suscríbete al NewsLetter</h3>
-          <form action="" class="footer__form">
-            <input type="email" placeholder="Email" class="footer__input">
-            <button type="submit" class="footer__button button">Suscríbete</button>
-          </form>
+  <main class="main" id="contenido">
+    <!--========================  INICIO  ========================-->
+    <section class="home" id="inicio">
+      <div class="home__container container">
+        <h1 class="home__title">CENCO</h1>
+        <img src="assets/img/cartel.webp" alt="Me ves, luego existo. ¿Te ven a ti?" class="home__cartel" width="356" height="352">
+        <p class="home__description">
+          Promocionamos la marca de nuestros clientes con formas nuevas e ingeniosas.
+        </p>
+        <div class="home__buttons">
+          <a href="#catalogos" class="button">Ver catálogos</a>
+          <a href="#presupuesto" class="button button--ghost">Pide presupuesto</a>
         </div>
       </div>
-    </footer>
+      <a href="#catalogos" class="home__scroll" aria-label="Bajar a catálogos">
+        <i class="ri-arrow-down-line" aria-hidden="true"></i>
+      </a>
+    </section>
 
-    <!--========================  SCROLL UP  ===============================-->
-    <a href="#" class="scrollup" id="scroll-up">
-      <i class="ri-arrow-up-line"></i>
-    </a>
+    <!--========================  CATÁLOGOS  ========================-->
+    <section class="catalogos section" id="catalogos">
+      <div class="container">
+        <h2 class="section__title">Catálogos</h2>
+        <p class="section__subtitle">Miles de artículos listos para llevar tu logo. Filtra por tipo de producto.</p>
 
-    <!--========================  SCROLLREVEAL  ===============================-->
-    <script src="assets/js/scrollreveal.min.js"></script>
+        <div class="filters" role="group" aria-label="Filtrar catálogos">
+          <button class="filter is-active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+          <button class="filter" type="button" data-filter="regalos" aria-pressed="false">Regalos</button>
+          <button class="filter" type="button" data-filter="textil" aria-pressed="false">Textil</button>
+          <button class="filter" type="button" data-filter="papeleria" aria-pressed="false">Papelería</button>
+          <button class="filter" type="button" data-filter="dulces" aria-pressed="false">Dulces</button>
+          <button class="filter" type="button" data-filter="tecnologia" aria-pressed="false">Tecnología</button>
+          <button class="filter" type="button" data-filter="bolsas" aria-pressed="false">Bolsas</button>
+        </div>
 
-     <!--========================  SWIPER JS  ===============================-->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="assets/js/swiper-bundle.js"></script>
+        <ul class="catalogos__grid" id="catalogos-grid">
+          <li class="catalogo" data-category="regalos" style="--c1:#7c5cb3;--c2:#b388eb">
+            <a href="https://view.publitas.com/md-es/24-1-yourchoice_es_vr/page/1" target="_blank" rel="noopener">
+              <span class="catalogo__cover"><i class="ri-magic-line" aria-hidden="true"></i></span>
+              <span class="catalogo__tag">Regalos</span>
+              <h3 class="catalogo__name">Productos personalizados</h3>
+              <span class="catalogo__link">Ver catálogo <i class="ri-external-link-line" aria-hidden="true"></i></span>
+            </a>
+          </li>
+          <li class="catalogo" data-category="regalos" style="--c1:#5b3a8c;--c2:#9b72cf">
+            <a href="https://view.publitas.com/md-es/gifts_spa_eur/page/1" target="_blank" rel="noopener">
+              <span class="catalogo__cover"><i class="ri-gift-line" aria-hidden="true"></i></span>
+              <span class="catalogo__tag">Regalos</span>
+              <h3 class="catalogo__name">Catálogo estándar anual</h3>
+              <span class="catalogo__link">Ver catálogo <i class="ri-external-link-line" aria-hidden="true"></i></span>
+            </a>
+          </li>
+          <li class="catalogo" data-category="regalos" style="--c1:#3d2766;--c2:#7c5cb3">
+            <a href="https://generalcatalogue2025.eu/9232bf5c5f2307bafca344bd05b274fe/" target="_blank" rel="noopener">
+              <span class="catalogo__cover"><i class="ri-earth-line" aria-hidden="true"></i></span>
+              <span class="catalogo__tag">Regalos</span>
+              <h3 class="catalogo__name">El catálogo más grande del mundo</h3>
+              <span class="catalogo__link">Ver catálogo <i class="ri-external-link-line" aria-hidden="true"></i></span>
+            </a>
+          </li>
+          <li class="catalogo" data-category="textil" style="--c1:#c2416b;--c2:#f08aa8">
+            <a href="https://www.roly.es/icatalog/urlCatRoly?lang=es" target="_blank" rel="noopener">
+              <span class="catalogo__cover"><i class="ri-t-shirt-line" aria-hidden="true"></i></span>
+              <span class="catalogo__tag">Textil</span>
+              <h3 class="catalogo__name">Roly · Catálogo textil</h3>
+              <span class="catalogo__link">Ver catálogo <i class="ri-external-link-line" aria-hidden="true"></i></span>
+            </a>
+          </li>
+          <li class="catalogo" data-category="dulces" style="--c1:#d9682b;--c2:#f6b26b">
+            <a href="https://www.caramelos-publicitarios.com/index.php" target="_blank" rel="noopener">
+              <span class="catalogo__cover"><i class="ri-cake-3-line" aria-hidden="true"></i></span>
+              <span class="catalogo__tag">Dulces</span>
+              <h3 class="catalogo__name">Caramelos y chocolates publicitarios</h3>
+              <span class="catalogo__link">Ver catálogo <i class="ri-external-link-line" aria-hidden="true"></i></span>
+            </a>
+          </li>
+          <li class="catalogo" data-category="papeleria" style="--c1:#1f7a8c;--c2:#5fc4d6">
+            <a href="https://e.issuu.com/embed.html?d=catalogo_professional_partners_2025_-_baja&amp;hideIssuuLogo=true&amp;u=aimfap" target="_blank" rel="noopener">
+              <span class="catalogo__cover"><i class="ri-book-2-line" aria-hidden="true"></i></span>
+              <span class="catalogo__tag">Papelería</span>
+              <h3 class="catalogo__name">Agendas personalizadas</h3>
+              <span class="catalogo__link">Ver catálogo <i class="ri-external-link-line" aria-hidden="true"></i></span>
+            </a>
+          </li>
+          <li class="catalogo" data-category="regalos" style="--c1:#8e3fa8;--c2:#d18be8">
+            <a href="https://catalog.hideagifts.com/main/WZYX9WFk/" target="_blank" rel="noopener">
+              <span class="catalogo__cover"><i class="ri-lightbulb-flash-line" aria-hidden="true"></i></span>
+              <span class="catalogo__tag">Regalos</span>
+              <h3 class="catalogo__name">Hi!dea</h3>
+              <span class="catalogo__link">Ver catálogo <i class="ri-external-link-line" aria-hidden="true"></i></span>
+            </a>
+          </li>
+          <li class="catalogo" data-category="regalos" style="--c1:#4a3b8f;--c2:#8a7ae0">
+            <a href="https://catalog.on-catalogue.com/view/628448852/" target="_blank" rel="noopener">
+              <span class="catalogo__cover"><i class="ri-star-smile-line" aria-hidden="true"></i></span>
+              <span class="catalogo__tag">Regalos</span>
+              <h3 class="catalogo__name">Ledibe</h3>
+              <span class="catalogo__link">Ver catálogo <i class="ri-external-link-line" aria-hidden="true"></i></span>
+            </a>
+          </li>
+          <li class="catalogo" data-category="tecnologia" style="--c1:#2b5fa8;--c2:#6fa0e8">
+            <a href="https://www.articulospublicitarios.net/mailing/mailing/PDF/midocean_-_memorias_usb.pdf" target="_blank" rel="noopener">
+              <span class="catalogo__cover"><i class="ri-usb-line" aria-hidden="true"></i></span>
+              <span class="catalogo__tag">Tecnología</span>
+              <h3 class="catalogo__name">Memorias USB</h3>
+              <span class="catalogo__link">Ver catálogo <i class="ri-external-link-line" aria-hidden="true"></i></span>
+            </a>
+          </li>
+          <li class="catalogo" data-category="papeleria" style="--c1:#2e8a5e;--c2:#79d1a4">
+            <a href="https://www.publicatalogue.com/2025/pren/#p=1" target="_blank" rel="noopener">
+              <span class="catalogo__cover"><i class="ri-leaf-line" aria-hidden="true"></i></span>
+              <span class="catalogo__tag">Papelería</span>
+              <h3 class="catalogo__name">Fabricados en papel</h3>
+              <span class="catalogo__link">Ver catálogo <i class="ri-external-link-line" aria-hidden="true"></i></span>
+            </a>
+          </li>
+          <li class="catalogo" data-category="textil" style="--c1:#a8324f;--c2:#e8798f">
+            <a href="https://www.articulospublicitarios.net/mailing/mailing/PDF/pmas_full_sport.pdf" target="_blank" rel="noopener">
+              <span class="catalogo__cover"><i class="ri-scissors-cut-line" aria-hidden="true"></i></span>
+              <span class="catalogo__tag">Textil</span>
+              <h3 class="catalogo__name">Textil fabricado a medida</h3>
+              <span class="catalogo__link">Ver catálogo <i class="ri-external-link-line" aria-hidden="true"></i></span>
+            </a>
+          </li>
+          <li class="catalogo" data-category="regalos" style="--c1:#6b4fa0;--c2:#c4a5f0">
+            <a href="https://www.flipsnack.com/9FA75F58B7A/inspiration-guide-2025-spanish-non-branded/full-view.html" target="_blank" rel="noopener">
+              <span class="catalogo__cover"><i class="ri-sparkling-line" aria-hidden="true"></i></span>
+              <span class="catalogo__tag">Regalos</span>
+              <h3 class="catalogo__name">Enjoy · Guía de inspiración</h3>
+              <span class="catalogo__link">Ver catálogo <i class="ri-external-link-line" aria-hidden="true"></i></span>
+            </a>
+          </li>
+          <li class="catalogo" data-category="bolsas" style="--c1:#7a5a2e;--c2:#d1a86b">
+            <a href="https://www.cataloghi.cloud/HANDLE2023_ES/index.html" target="_blank" rel="noopener">
+              <span class="catalogo__cover"><i class="ri-shopping-bag-3-line" aria-hidden="true"></i></span>
+              <span class="catalogo__tag">Bolsas</span>
+              <h3 class="catalogo__name">Bolsas personalizadas</h3>
+              <span class="catalogo__link">Ver catálogo <i class="ri-external-link-line" aria-hidden="true"></i></span>
+            </a>
+          </li>
+        </ul>
+        <p class="catalogos__note">Los catálogos se abren en la web de cada proveedor, en una pestaña nueva.</p>
+      </div>
+    </section>
 
-    <!--========================  MAIN JS  ===============================-->
-    <script src="assets/js/main.js"></script>
+    <!--========================  QUIÉNES SOMOS  ========================-->
+    <section class="about section" id="quienes-somos">
+      <div class="about__container container">
+        <div class="about__data">
+          <h2 class="section__title section__title--left">Aprende más sobre nosotros</h2>
+          <p class="about__description">
+            Creemos en la creatividad y la originalidad como pilares fundamentales de la publicidad.
+            Por eso desarrollamos estrategias personalizadas que se adaptan a las necesidades de cada negocio.
+            Ya sea con merchandising corporativo, regalos promocionales o productos personalizados,
+            en Cenco transformamos ideas en soluciones efectivas.
+          </p>
+          <ul class="about__values">
+            <li><i class="ri-lightbulb-line" aria-hidden="true"></i><span><strong>Creatividad</strong> Ideas originales para que tu marca se recuerde.</span></li>
+            <li><i class="ri-palette-line" aria-hidden="true"></i><span><strong>Personalización</strong> Cada propuesta, adaptada a tu negocio.</span></li>
+            <li><i class="ri-shake-hands-line" aria-hidden="true"></i><span><strong>Cercanía</strong> Te asesoramos de principio a fin, en Tenerife.</span></li>
+          </ul>
+          <a href="#catalogos" class="button">Nuestros catálogos</a>
+        </div>
+
+        <div class="about__images">
+          <div class="about__shape"></div>
+          <img src="assets/img/articulos.webp" alt="Botellas, bolígrafos, textil y otros artículos promocionales personalizados" class="about__img" width="600" height="561" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!--========================  MUESTRAS  ========================-->
+    <section class="muestras section" id="muestras">
+      <div class="container">
+        <h2 class="section__title">Muestras</h2>
+        <p class="section__subtitle">Algunos trabajos que hemos realizado para nuestros clientes. Pulsa en una imagen para ampliarla.</p>
+
+        <ul class="gallery" id="gallery">
+          <li><button class="gallery__item" type="button"><img src="assets/img/muestra-01.webp" alt="Calendario con forma de lápiz" loading="lazy" width="800" height="558"><span>Calendario lápiz</span></button></li>
+          <li><button class="gallery__item" type="button"><img src="assets/img/muestra-02.webp" alt="Reloj de pulsera personalizado" loading="lazy" width="800" height="708"><span>Reloj</span></button></li>
+          <li><button class="gallery__item" type="button"><img src="assets/img/muestra-03.webp" alt="Pegatina con forma de contenedor de reciclaje" loading="lazy" width="800" height="803"><span>Pegatinas</span></button></li>
+          <li><button class="gallery__item" type="button"><img src="assets/img/muestra-04.webp" alt="Taza personalizada con diseño a color" loading="lazy" width="800" height="792"><span>Tazas</span></button></li>
+          <li><button class="gallery__item" type="button"><img src="assets/img/muestra-05.webp" alt="Toalla prensada con diseño de lagarto" loading="lazy" width="788" height="800"><span>Toallas prensadas</span></button></li>
+          <li><button class="gallery__item" type="button"><img src="assets/img/muestra-06.webp" alt="Llavero metálico con forma de bombilla" loading="lazy" width="723" height="920"><span>Llaveros</span></button></li>
+          <li><button class="gallery__item" type="button"><img src="assets/img/muestra-07.webp" alt="Puzzle de la Reserva Marina del Mar de Las Calmas" loading="lazy" width="800" height="785"><span>Puzzles</span></button></li>
+          <li><button class="gallery__item" type="button"><img src="assets/img/muestra-08.webp" alt="Memoria USB con llavero" loading="lazy" width="800" height="483"><span>Memorias USB</span></button></li>
+          <li><button class="gallery__item" type="button"><img src="assets/img/muestra-09.webp" alt="Funda para CD con logotipo grabado" loading="lazy" width="800" height="591"><span>Fundas para CD</span></button></li>
+          <li><button class="gallery__item" type="button"><img src="assets/img/muestra-10.webp" alt="Lata de caramelos personalizada" loading="lazy" width="800" height="641"><span>Latas de caramelos</span></button></li>
+          <li><button class="gallery__item" type="button"><img src="assets/img/muestra-11.webp" alt="Llavero metálico con forma de casa" loading="lazy" width="790" height="920"><span>Llaveros metálicos</span></button></li>
+          <li><button class="gallery__item" type="button"><img src="assets/img/muestra-12.webp" alt="Portanotas con pinza y base de cubo" loading="lazy" width="654" height="920"><span>Portanotas</span></button></li>
+        </ul>
+      </div>
+    </section>
+
+    <!--========================  PRESUPUESTO  ========================-->
+    <section class="presupuesto section" id="presupuesto">
+      <div class="presupuesto__container container">
+        <div class="presupuesto__intro">
+          <h2 class="section__title section__title--left">Pide presupuesto</h2>
+          <p>Cuéntanos qué necesitas y te respondemos con una propuesta. Al enviar, se abrirá WhatsApp con tu mensaje ya escrito.</p>
+          <ul class="presupuesto__steps">
+            <li><span>1</span> Rellena el formulario</li>
+            <li><span>2</span> Envíalo por WhatsApp</li>
+            <li><span>3</span> Recibe tu propuesta</li>
+          </ul>
+        </div>
+
+        <form class="form" id="form-presupuesto" novalidate>
+          <div class="form__row">
+            <div class="form__field">
+              <label for="f-nombre">Nombre *</label>
+              <input id="f-nombre" name="nombre" type="text" autocomplete="name" required maxlength="80">
+              <p class="form__error" aria-live="polite"></p>
+            </div>
+            <div class="form__field">
+              <label for="f-empresa">Empresa</label>
+              <input id="f-empresa" name="empresa" type="text" autocomplete="organization" maxlength="80">
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__field">
+              <label for="f-producto">Tipo de producto *</label>
+              <select id="f-producto" name="producto" required>
+                <option value="">Elige una opción</option>
+                <option>Regalos promocionales</option>
+                <option>Textil</option>
+                <option>Papelería y agendas</option>
+                <option>Caramelos y chocolates</option>
+                <option>Tecnología</option>
+                <option>Bolsas</option>
+                <option>Otro / no lo sé todavía</option>
+              </select>
+              <p class="form__error" aria-live="polite"></p>
+            </div>
+            <div class="form__field">
+              <label for="f-cantidad">Unidades aproximadas</label>
+              <input id="f-cantidad" name="cantidad" type="number" min="1" step="1" inputmode="numeric">
+              <p class="form__error" aria-live="polite"></p>
+            </div>
+          </div>
+          <div class="form__field">
+            <label for="f-mensaje">¿Qué necesitas? *</label>
+            <textarea id="f-mensaje" name="mensaje" rows="4" required minlength="10" maxlength="1000" placeholder="Ej.: 200 bolsas de tela con nuestro logo para una feria en marzo."></textarea>
+            <p class="form__error" aria-live="polite"></p>
+          </div>
+          <button class="button form__submit" type="submit">
+            <i class="ri-whatsapp-line" aria-hidden="true"></i> Enviar por WhatsApp
+          </button>
+          <p class="form__note">No guardamos tus datos: el mensaje se envía directamente desde tu WhatsApp.</p>
+        </form>
+      </div>
+    </section>
+
+    <!--========================  CONTACTO  ========================-->
+    <section class="contacto section" id="contacto">
+      <div class="container">
+        <h2 class="section__title">Contáctanos</h2>
+
+        <div class="contacto__container">
+          <div class="contacto__cards">
+            <article class="contacto__card">
+              <i class="ri-phone-line" aria-hidden="true"></i>
+              <h3>Teléfono</h3>
+              <p><a href="tel:+34922266122">922 266 122</a><br><a href="tel:+34922315926">922 315 926</a></p>
+            </article>
+            <article class="contacto__card">
+              <i class="ri-whatsapp-line" aria-hidden="true"></i>
+              <h3>WhatsApp</h3>
+              <p><a href="https://wa.me/34639687333?text=Hola%2C%20me%20gustar%C3%ADa%20tener%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noopener">639 687 333</a></p>
+            </article>
+            <article class="contacto__card">
+              <i class="ri-map-pin-line" aria-hidden="true"></i>
+              <h3>Ubicación</h3>
+              <address>
+                Camino las Gavias, C/ Pedro González, 14<br>
+                (frente al Colegio Luther King)<br>
+                38206 La Laguna, Tenerife
+              </address>
+              <a href="https://maps.app.goo.gl/gb8soC3tnczzLfYu5" target="_blank" rel="noopener" class="contacto__link">Cómo llegar <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a>
+            </article>
+            <article class="contacto__card">
+              <i class="ri-time-line" aria-hidden="true"></i>
+              <h3>Horario</h3>
+              <p>Lunes a viernes<br>8:00 – 17:00</p>
+              <p class="contacto__status" id="open-status" hidden></p>
+            </article>
+          </div>
+
+          <div class="contacto__map" id="map">
+            <img src="assets/img/contacto.webp" alt="" class="contacto__map-bg" width="600" height="771" loading="lazy">
+            <div class="contacto__map-overlay">
+              <p>El mapa se carga desde Google Maps. Al cargarlo, Google puede usar cookies.</p>
+              <button class="button" type="button" id="load-map"><i class="ri-map-2-line" aria-hidden="true"></i> Cargar mapa</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--========================  FOOTER  ========================-->
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__brand">
+        <img src="assets/img/logo.webp" alt="Cenco" width="116" height="46" loading="lazy">
+        <p>Me ves, luego existo. ¿Te ven a ti?</p>
+      </div>
+      <nav class="footer__nav" aria-label="Pie de página">
+        <a href="#catalogos">Catálogos</a>
+        <a href="#quienes-somos">Quiénes somos</a>
+        <a href="#muestras">Muestras</a>
+        <a href="#presupuesto">Presupuesto</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="footer__contact">
+        <a href="tel:+34922266122"><i class="ri-phone-line" aria-hidden="true"></i> 922 266 122</a>
+        <a href="https://wa.me/34639687333" target="_blank" rel="noopener"><i class="ri-whatsapp-line" aria-hidden="true"></i> 639 687 333</a>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <p>© <span id="year">2025</span> Cenco. Todos los derechos reservados.</p>
+      <p><a href="aviso-legal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad y cookies</a></p>
+    </div>
+  </footer>
+
+  <!-- Botones flotantes -->
+  <a href="https://wa.me/34639687333?text=Hola%2C%20me%20gustar%C3%ADa%20tener%20m%C3%A1s%20informaci%C3%B3n." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <i class="ri-whatsapp-fill" aria-hidden="true"></i>
+  </a>
+  <a href="#inicio" class="scrollup" id="scroll-up" aria-label="Volver arriba">
+    <i class="ri-arrow-up-line" aria-hidden="true"></i>
+  </a>
+
+  <!-- Visor de imágenes (lightbox) -->
+  <dialog class="lightbox" id="lightbox" aria-label="Imagen ampliada">
+    <button class="lightbox__close" type="button" aria-label="Cerrar"><i class="ri-close-line" aria-hidden="true"></i></button>
+    <button class="lightbox__nav lightbox__prev" type="button" aria-label="Anterior"><i class="ri-arrow-left-s-line" aria-hidden="true"></i></button>
+    <figure>
+      <img src="" alt="" id="lightbox-img">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__next" type="button" aria-label="Siguiente"><i class="ri-arrow-right-s-line" aria-hidden="true"></i></button>
+  </dialog>
+
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
