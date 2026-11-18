@@ -36,7 +36,7 @@ and no build step, and published on GitHub Pages.
 | **Performance** | ~4 MB of PNG/JPEG, Swiper + ScrollReveal + Ionicons | **~260 KB** of WebP with lazy loading and responsive hero images, **zero JS dependencies** |
 | **Accessibility** | `alt="image"`, `div` as menu button, hidden focus outline, long animations that replayed on every scroll | Descriptive alt text, real `<button>`s with `aria-expanded` / `aria-pressed`, visible focus, skip link, `prefers-reduced-motion` respected, animations play once |
 | **SEO** | No meta description, favicon or social preview | Meta description, Open Graph / Twitter cards, favicon, `LocalBusiness` structured data |
-| **Content** | Fake "4.5 ★" ratings and template leftovers; only 7 of 12 samples shown | Real product names, all 12 samples, clear calls to action |
+| **Content** | Fake "4.5 ★" ratings and template leftovers; only 7 of 12 available samples shown | Real product names, 11 samples in a zoomable gallery, clear calls to action |
 
 ## Testing
 
